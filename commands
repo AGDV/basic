@@ -1,6 +1,7 @@
 We assume you have installed Git bash successfully on your PC.
 Lets check which we verison we have, type: git --version 
 Ok, now lets set default user email, use your email: git config --global user.email 'your email example @ gmail.com'
+Also configure your name: git config --global user.name "yourname"
 Now we can check if our email shows up type : git config --list
 You may type anytime : git --help 
 Lets make a directory in our windows directory, please notice the directory name appears in your current home folder, type : git mkdir test
@@ -10,7 +11,7 @@ Lets check the status of our current folder: git status
 Now lets add the text file we've created, we use add so Git could include the file, type the following in Git bash: git add info.txt
 After we have included our text file "info", Git need to be auhorized and create mode for the file: git commit -m "doing commit"
 We need to use three commands (config, remote and push) in order to upload our file from PC to our Github account/page.
-First lets configure Git with Github account by typing: git config --global.user.username your_username_on_github
+To configure Git with Github account: git config --global.user.username your_username_on_github
 Go to your Github account and create a repository then copy your github link, then in Git bash type: git remote add origin "paste the link here without double quotes"
 You may be notified to enter your current github username and password to verify it's you, after successful verification you need to use push command.
 git push origin master
